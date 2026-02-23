@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "Submit Auto-Clicker (Safe)",
   "version": "1.0.1",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuq01CvqQkPlDuqlGzuMKnHXntsoIvGSqdS8cXvYc71arVVeSDhxmzpUhi3QS4GaixIb8XOeICtRKhDfotpzGn+jIJg5Oqm71EA4FfYS8uMuDh+luar65cuQBuRspTprJF8hiV2XUkBC7Zo2N26ae9JZA4jJ92w7aB1lmD1dr6qow0xuhdZtn8HKjSywW6vjT3au67hh52LVWPoX0ETV1Eu5ob5nYqS78m+q5ODhUWQgi9zMXiLsBJ4K/QVy8UIhkVz3bNiMrLly6TRxmQSCjjOof5o7RXF8HsgjYdAIAhfT5/nHD235iBiRktx0Ym4HU2MKlGj5Qh/ZC2Op176OTmQIDAQAB",
   "description": "Allowlist-based submit button auto-clicker with dry-run safeguards.",
   "homepage_url": "https://github.com/nabil-stem/submit-bot-codex-vscode",
   "permissions": ["storage", "tabs"],
