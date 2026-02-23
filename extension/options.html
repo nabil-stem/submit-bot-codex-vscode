@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Submit Auto-Clicker Options</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="options">
+      <header>
+        <h1>Submit Auto-Clicker Options</h1>
+        <p>Safe-by-default settings. Keep allowlist narrow.</p>
+      </header>
+
+      <section class="card">
+        <h2>Activation</h2>
+        <label class="row">
+          <span>Global enabled</span>
+          <input id="globalEnabled" type="checkbox" />
+        </label>
+        <label class="row">
+          <span>Dry-run mode</span>
+          <input id="dryRun" type="checkbox" />
+        </label>
+      </section>
+
+      <section class="card">
+        <h2>Allowlist URL Patterns</h2>
+        <p>One pattern per line, wildcard supported (example: <code>https://github.com/*</code>).</p>
+        <textarea id="allowlistPatterns" rows="6"></textarea>
+      </section>
+
+      <section class="card">
+        <h2>Button Text Patterns</h2>
+        <p>One label per line. Matches exact text or prefix.</p>
+        <textarea id="buttonTexts" rows="6"></textarea>
+      </section>
+
+      <section class="card">
+        <h2>Detection Controls</h2>
+        <label class="column">
+          <span>Container CSS selector</span>
+          <input id="containerSelector" type="text" />
+        </label>
+        <label class="column">
+          <span>Cooldown (ms)</span>
+          <input id="cooldownMs" type="number" min="0" max="300000" step="50" />
+        </label>
+        <label class="column">
+          <span>Mutation debounce (ms)</span>
+          <input id="debounceMs" type="number" min="50" max="5000" step="10" />
+        </label>
+      </section>
+
+      <section class="actions">
+        <button id="saveButton" type="button">Save</button>
+        <button id="resetButton" type="button" class="secondary">Reset Defaults</button>
+        <span id="saveStatus"></span>
+      </section>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>
+

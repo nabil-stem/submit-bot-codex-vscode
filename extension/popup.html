@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Submit Auto-Clicker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <h1>Submit Auto-Clicker</h1>
+      <p id="statusText" class="status">Loading...</p>
+
+      <label class="toggle">
+        <span>Global Enabled</span>
+        <input id="globalEnabled" type="checkbox" />
+      </label>
+
+      <label class="toggle">
+        <span>Enabled For This Site</span>
+        <input id="siteEnabled" type="checkbox" />
+      </label>
+
+      <label class="toggle">
+        <span>Dry-Run Mode</span>
+        <input id="dryRun" type="checkbox" />
+      </label>
+
+      <p class="meta" id="originText"></p>
+      <p class="meta" id="lastClickText"></p>
+
+      <div class="actions">
+        <button id="openOptions" type="button">Open Options</button>
+      </div>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
+

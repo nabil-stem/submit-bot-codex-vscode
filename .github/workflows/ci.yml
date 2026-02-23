@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  desktop-tests:
+    name: Desktop Tests (Python ${{ matrix.python-version }})
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    defaults:
+      run:
+        shell: pwsh
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: desktop/requirements.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r desktop/requirements.txt
+
+      - name: Compile check
+        run: |
+          $files = Get-ChildItem desktop -Recurse -Filter *.py | Select-Object -ExpandProperty FullName
+          python -m py_compile $files
+
+      - name: Run unit tests
+        run: |
+          Set-Location desktop
+          pytest -q
+
+  extension-syntax:
+    name: Extension JS Syntax
+    runs-on: windows-latest
+
+    defaults:
+      run:
+        shell: pwsh
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Check JS syntax
+        run: |
+          $files = Get-ChildItem extension -Recurse -Filter *.js | Select-Object -ExpandProperty FullName
+          foreach ($f in $files) { node --check $f }
+

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Submit Auto-Clicker (Safe)",
+  "version": "1.0.0",
+  "description": "Allowlist-based submit button auto-clicker with dry-run safeguards.",
+  "homepage_url": "https://github.com/nabilessaadiii-ship-it/submit-bot-codex-vscode",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Submit Auto-Clicker",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/icon16.svg",
+    "32": "icons/icon32.svg",
+    "48": "icons/icon48.svg",
+    "128": "icons/icon128.svg"
+  }
+}

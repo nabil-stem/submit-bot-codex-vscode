@@ -1,0 +1,20 @@
+allowed_processes = ["python.exe", "pythonw.exe", "powershell.exe", "pwsh.exe"]
+allowed_window_title_contains = ["Submit AutoClicker Test", "Submit AutoClicker Form Test"]
+button_texts = ["Submit"]
+
+poll_interval_ms = 200
+click_cooldown_ms = 60000
+require_button_enabled = true
+require_near_text_contains = []
+
+allow_focus = false
+preserve_focus = true
+focus_restore_delay_ms = 40
+dry_run = false
+
+enable_image_fallback = false
+image_fallback_confidence = 0.92
+image_button_templates = []
+
+hotkey_pause_resume = "ctrl+alt+p"
+log_level = "INFO"

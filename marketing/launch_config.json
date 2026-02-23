@@ -1,0 +1,19 @@
+{
+  "project_name": "Submit Bot Codex VSCode",
+  "tagline": "Safe auto-submit for VS Code Codex and selected web forms.",
+  "repo_url": "https://github.com/nabilessaadiii-ship-it/submit-bot-codex-vscode",
+  "author_name": "Nabil Essaadi",
+  "extension_store_url": "",
+  "website_url": "",
+  "keywords": [
+    "vscode codex",
+    "submit auto clicker",
+    "chrome extension submit",
+    "windows ui automation",
+    "allowlist automation",
+    "dry-run automation"
+  ],
+  "primary_call_to_action": "Star the repo and test dry-run mode first.",
+  "support_email": "contact@example.com"
+}
+
