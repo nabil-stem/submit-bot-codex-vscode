@@ -3,15 +3,15 @@
   "name": "Submit Auto-Clicker (Safe)",
   "version": "1.0.0",
   "description": "Allowlist-based submit button auto-clicker with dry-run safeguards.",
-  "homepage_url": "https://github.com/nabilessaadiii-ship-it/submit-bot-codex-vscode",
+  "homepage_url": "https://github.com/nabil-stem/submit-bot-codex-vscode",
   "permissions": ["storage", "tabs"],
-  "host_permissions": ["<all_urls>"],
+  "host_permissions": ["https://*/*", "http://*/*"],
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": ["https://*/*", "http://*/*"],
       "js": ["content.js"],
       "run_at": "document_idle"
     }
