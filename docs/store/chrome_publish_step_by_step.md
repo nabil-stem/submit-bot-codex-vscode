@@ -62,6 +62,10 @@ Use drafts from:
 - `docs/store/chrome_web_store_listing.md`
 - `docs/privacy/privacy-policy.md`
 
+Recommended public privacy URL (after enabling GitHub Pages):
+
+- `https://nabil-stem.github.io/submit-bot-codex-vscode/privacy.html`
+
 ## Post-Publish
 
 1. Add store URL to `marketing/launch_config.json`.
@@ -70,4 +74,3 @@ Use drafts from:
 ```powershell
 python .\scripts\generate_launch_kit.py --config .\marketing\launch_config.json --output .\marketing\out
 ```
-

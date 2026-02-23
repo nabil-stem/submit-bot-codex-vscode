@@ -105,6 +105,7 @@ Generated files include:
 - Demo recording script: `docs/seo/demo_recording_script.md`
 - Chrome/Edge listing draft: `docs/store/chrome_web_store_listing.md`
 - Privacy policy template: `docs/privacy/privacy-policy.md`
+- Public privacy page for store submission: `privacy.html`
 - Monetization playbook: `docs/seo/monetization_playbook.md`
 
 ## Replit Traffic Page
