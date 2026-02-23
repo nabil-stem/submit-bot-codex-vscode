@@ -75,12 +75,13 @@ Button patterns:
 ## Publish to Chrome/Edge Stores
 
 1. Prepare listing copy from `docs/store/chrome_web_store_listing.md`.
-2. Publish privacy policy from `docs/privacy/privacy-policy.md` to a public URL.
-3. Build screenshots showing:
+2. Follow API/manual flow in `docs/store/chrome_publish_step_by_step.md`.
+3. Publish privacy policy from `docs/privacy/privacy-policy.md` to a public URL.
+4. Build screenshots showing:
    - popup toggles,
    - options allowlist,
    - in-page active overlay.
-4. Submit to Chrome Web Store and Edge Add-ons.
+5. Submit to Chrome Web Store and Edge Add-ons.
 
 ## Metadata
 
