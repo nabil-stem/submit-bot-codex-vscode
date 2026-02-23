@@ -106,7 +106,36 @@ Generated files include:
 - Chrome/Edge listing draft: `docs/store/chrome_web_store_listing.md`
 - Privacy policy template: `docs/privacy/privacy-policy.md`
 - Public privacy page for store submission: `privacy.html`
+- Post-approval launch checklist: `docs/seo/post_approval_launch.md`
 - Monetization playbook: `docs/seo/monetization_playbook.md`
+
+## Chrome Store Listing Links
+
+Use these exact URLs in Chrome Web Store listing fields:
+
+- Homepage URL: `https://github.com/nabil-stem/submit-bot-codex-vscode`
+- Support URL: `https://github.com/nabil-stem/submit-bot-codex-vscode/issues`
+- Privacy policy URL: `https://raw.githubusercontent.com/nabil-stem/submit-bot-codex-vscode/main/privacy.html`
+
+## Post-Approval Launch (Ready)
+
+1. Add install badge to README after store URL is live:
+
+```md
+[![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Install-1a73e8?logo=googlechrome&logoColor=white)](YOUR_CHROME_STORE_URL)
+```
+
+2. Add demo media to README:
+- Preferred: short GIF showing allowlist + dry-run + overlay.
+- Temporary fallback screenshot: `marketing/store_assets/screenshot-04-overlay-active-1280x800.png`
+
+3. Publish launch posts from generated templates:
+
+```powershell
+python .\scripts\generate_launch_kit.py --config .\marketing\launch_config.json --output .\marketing\out
+```
+
+Files to post from: `marketing/out/x_post.txt`, `marketing/out/linkedin_post.md`, `marketing/out/reddit_post.md`, `marketing/out/devto_article.md`.
 
 ## Replit Traffic Page
 

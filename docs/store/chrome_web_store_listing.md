@@ -49,7 +49,6 @@ Submit Auto-Clicker helps you automate repetitive submit actions with strict saf
 
 ## Required Links
 
-- Homepage: your GitHub repo
-- Support URL: issue tracker / email
-- Privacy policy URL: publish `docs/privacy/privacy-policy.md` to a public URL
-
+- Homepage: `https://github.com/nabil-stem/submit-bot-codex-vscode`
+- Support URL: `https://github.com/nabil-stem/submit-bot-codex-vscode/issues`
+- Privacy policy URL: `https://raw.githubusercontent.com/nabil-stem/submit-bot-codex-vscode/main/privacy.html`
