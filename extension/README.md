@@ -40,6 +40,18 @@ Allowlist-gated submit auto-clicker for web pages.
 4. Select this `extension/` folder.
 5. Open extension Options and configure your allowlist before enabling.
 
+## Build Upload ZIP
+
+From repo root:
+
+```powershell
+.\scripts\package_extension.ps1
+```
+
+This generates:
+
+`release\out\submit-autoclicker-extension-upload.zip`
+
 ## Pattern Examples
 
 Allowlist URL patterns:
